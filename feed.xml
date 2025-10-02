@@ -7,15 +7,30 @@
   <description>Daily top 3 headlines from Dayton, OH media</description>
   <lastBuildDate>Thu, 02 Oct 2025 06:00:00 -0400</lastBuildDate>
   <atom:link href="https://appml-create.github.io/dayton-headlines-rss/feed.xml" rel="self" type="application/rss+xml" />
+<item>
+  <title>Ohio county agrees to $7M settlement over man’s death in jail restraint</title>
+  <link>https://apnews.com/article/80932ba5f8fcec10088a2719e186443d</link>
+  <description><![CDATA[The family of Christian Black, who died after being restrained by jail deputies in Montgomery County, reached a $7M settlement. Officials plan to expand mental health support in the jail as the family seeks accountability.]]></description>
+  <guid isPermaLink="false">montgomery-settlement-2025-10-02</guid>
+  <pubDate>Thu, 02 Oct 2025 18:33:53 +0000</pubDate>
+</item>
 
+<item>
+  <title>New video shows chaos after Dayton bar shooting, police neutralize gunman</title>
+  <link>https://www.cbsnews.com/news/dayton-ohio-shooting-video-shows-chaos-after-police-took-down-gunman/</link>
+  <description><![CDATA[A newly released video captures the immediate aftermath of a shooting at Ned Peppers in Dayton’s Oregon District. Police say they killed the shooter before he could enter the bar; at least 41 shell casings were found.]]></description>
+  <guid isPermaLink="false">dayton-shooting-video-2025-10-02</guid>
+  <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+</item>
 
-    <item>
-      <title>Test Item</title>
-      <link>https://example.com/1</link>
-      <description>Test description</description>
-      <guid isPermaLink="false">test-1</guid>
-      <pubDate>Thu, 02 Oct 2025 06:00:00 -0400</pubDate>
-    </item>
+<item>
+  <title>Ohio designates Wright Flyer III as official state plane</title>
+  <link>https://apnews.com/article/76c4b26a3d8e729fc7b938b3844d5258</link>
+  <description><![CDATA>Ohio lawmakers have officially named the 1905 Wright Flyer III as the state airplane, honoring Dayton’s aviation heritage. The designation highlights the Flyer III’s advancements over the original 1903 model.]]></description>
+  <guid isPermaLink="false">ohio-flyer-iii-designation-2025-04-03</guid>
+  <pubDate>Thu, 03 Apr 2025 14:29:25 +0000</pubDate>
+</item>
+
 
   </channel>
 </rss>
