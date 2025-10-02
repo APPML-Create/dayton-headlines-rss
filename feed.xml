@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>Dayton Headlines</title>
-    <link>https://example.com</link>
-    <description>Top 3 headlines</description>
-    <lastBuildDate>Thu, 02 Oct 2025 06:00:00 -0400</lastBuildDate>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Dayton Headlines Feed</title>
+  <link>https://example.com</link>
+  <description>Daily top 3 headlines from Dayton, OH media</description>
+  <lastBuildDate>Thu, 02 Oct 2025 06:00:00 -0400</lastBuildDate>
+  <atom:link href="https://YOUR-USER.github.io/dayton-headlines-rss/feed.xml" rel="self" type="application/rss+xml" />
+
 
     <item>
       <title>Test Item</title>
