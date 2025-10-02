@@ -1,36 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
   <channel>
-    <title>Dayton Headlines Feed</title>
+    <title>Dayton Headlines</title>
     <link>https://example.com</link>
-    <description>Daily top 3 headlines from Dayton, OH media</description>
+    <description>Top 3 headlines</description>
     <lastBuildDate>Thu, 02 Oct 2025 06:00:00 -0400</lastBuildDate>
-    <atom:link href="https://APPML-Create.github.io/dayton-headlines-rss/feed.xml" rel="self" type="application/rss+xml" />
 
     <item>
-      <title>WHIO – Headline</title>
-      <link>https://whio.com/story</link>
-      <description>Summary of WHIO story.</description>
-      <guid isPermaLink="false">whio-xyz</guid>
+      <title>Test Item</title>
+      <link>https://example.com/1</link>
+      <description>Test description</description>
+      <guid isPermaLink="false">test-1</guid>
       <pubDate>Thu, 02 Oct 2025 06:00:00 -0400</pubDate>
-    </item>
-
-    <item>
-      <title>WDTN – Headline</title>
-      <link>https://wdtn.com/story</link>
-      <description>Summary of WDTN story.</description>
-      <guid isPermaLink="false">wdtn-xyz</guid>
-      <pubDate>Thu, 02 Oct 2025 06:05:00 -0400</pubDate>
-    </item>
-
-    <item>
-      <title>Dayton Daily News – Headline</title>
-      <link>https://daytondailynews.com/story</link>
-      <description>Summary of Dayton Daily News story.</description>
-      <guid isPermaLink="false">ddn-xyz</guid>
-      <pubDate>Thu, 02 Oct 2025 06:10:00 -0400</pubDate>
     </item>
 
   </channel>
 </rss>
-
