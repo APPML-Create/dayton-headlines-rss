@@ -2,7 +2,7 @@ name: Build Dayton RSS
 
 on:
   schedule:
-    # 06:00 ET in DST ≈ 10:00 UTC; in standard time ≈ 11:00 UTC.
+    # ~06:05 ET in DST ≈ 10:05 UTC; in Standard Time ≈ 11:05 UTC
     - cron: "5 10 * * *"
     - cron: "5 11 * * *"
   workflow_dispatch:
@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,16 +24,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build feed
-        run: |
-          python scripts/build_feed.py
+        run: python scripts/build_feed.py
 
       - name: Commit and push if changed
         run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
+          if [[ -n "$(git status --porcelain feed.xml)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add feed.xml
             git commit -m "Auto-update feed.xml"
             git push
           fi
-
