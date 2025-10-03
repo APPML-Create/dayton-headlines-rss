@@ -8,7 +8,7 @@ from html import unescape
 # ----- Config -----
 FEED_TITLE = "Dayton Headlines Feed"
 # Set this to your GitHub Pages feed URL:
-FEED_LINK = "https://YOUR-USER.github.io/dayton-headlines-rss/feed.xml"
+FEED_LINK = "https://appml-create.github.io/dayton-headlines-rss/feed.xml"
 FEED_DESCRIPTION = "Daily top 6 headlines from Dayton, OH media"
 OUTPUT = "feed.xml"
 MAX_ITEMS = 6
