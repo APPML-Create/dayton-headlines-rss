@@ -9,6 +9,12 @@ on:
 permissions:
   contents: write
 
+steps:
+  - uses: actions/checkout@v4
+    with:
+      fetch-depth: 0
+      clean: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,17 +37,18 @@ jobs:
       - name: Build feed
         run: python scripts/build_feed.py
 
-      - name: Commit and push if changed
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout main
-          git pull --rebase origin main
-          if [[ -n "$(git status --porcelain feed.xml)" ]]; then
-            git add feed.xml
-            git commit -m "Auto-update feed.xml"
-            git push origin HEAD:main
-          else
-            echo "No changes to commit."
-          fi
+- name: Commit and push if changed
+  shell: bash
+  run: |
+    git config user.name "github-actions[bot]"
+    git config user.email "github-actions[bot]@users.noreply.github.com"
+    git fetch origin main
+    git pull --rebase --autostash origin main
+    if ! git diff --quiet -- feed.xml; then
+      git add feed.xml
+      git commit -m "Auto-update feed.xml"
+      git push origin HEAD:main
+    else
+      echo "No changes to commit."
+    fi
+
